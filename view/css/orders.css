@@ -1,0 +1,48 @@
+main {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+#no-orders {
+    text-align: center;
+    font-size: 25px;
+}
+
+.firstname, .lastname{
+    font-weight: bold;
+}
+
+.order{
+    padding: 10px;
+    background-color: rgba(0,0,0,.4);
+    position: relative;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.order-user {
+    margin-bottom: 5px;
+}
+
+.is-delivered{
+    font-style: italic;
+}
+
+.price {
+    float: right;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 1300px) {
+    main {
+        width: 75%;
+    }
+}
+
+@media screen and (max-device-width: 550px) {
+    main {
+        width: 100%;
+    }
+}

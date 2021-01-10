@@ -1,0 +1,93 @@
+.cmd
+{
+    text-align: center;
+    margin-top: 20px;
+}
+thead{
+    font-size: 18px;
+    text-transform: capitalize;
+
+}
+
+
+#content{
+    background-color: rgba(0,0,0,.5);
+    font-size: 25px;
+    padding: 20px;
+}
+
+form, #warning, #price, #error{
+    text-align: center;
+}
+
+#error{
+    padding-top: 10px;
+}
+
+#warning{
+    color: #e74c3c;
+}
+
+#warning a{
+    color: #fff;
+}
+
+#price{
+    margin: 10px;
+}
+
+.price{
+    font-weight: bold;
+}
+
+label{
+    display: flex;
+}
+
+#submit-btn{
+    margin-top: 10px;
+}
+
+#return{
+    color: #fff;
+    text-align: left;
+    font-size: 20px;
+}
+
+.row {
+    width: 100%;
+
+    flex-direction: row;
+    justify-content: left;
+}
+.bouton{
+    position: relative;
+    left: -20px;
+}
+.box5{
+    background-color: rgba(0,0,0,.5) ;
+}
+.title{
+    border-bottom-width: 5px;
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+}
+td{
+    padding-bottom: 20px;
+    padding-right: 35px;
+}
+.bode{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: left;
+
+}
+.ite{
+    padding-right: 20px;
+}
+
+tr{
+    padding-top: 10px;
+    padding-right: 35px;
+}

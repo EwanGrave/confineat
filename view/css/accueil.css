@@ -1,0 +1,198 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: url("../img/fond_ecran.png") no-repeat center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+img[alt^="logo"] {
+    min-width: 20px;
+    height: auto;
+    opacity: 100%;
+}
+
+img[alt="logo_menu"] {
+    cursor: pointer;
+}
+
+div[class^="box1"] img {
+    cursor: pointer;
+    width: 100%;
+}
+
+
+nav[class^="titre"]{
+    background-color: rgba(0, 0, 0, .8);
+    margin: 15px 5% 15px 5%;
+    padding: 20px;
+}
+
+/* Menu de navigation */
+
+#title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.nav-menu img{
+    width: 40px;
+}
+
+.nav-logo img{
+    margin-left: 10px;
+    width: 55px;
+}
+
+.nav-title {
+    font-size: 23px;
+    float: right;
+    margin-top: 7px;
+}
+
+/*Mise en forme générale de toutes les divs*/
+div[class^="box"]{
+    display: flex;
+    padding: 5px;
+}
+
+.box3{
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: right;
+    justify-content: center;
+    font-size: 23px;
+    margin-right: 10px;
+}
+
+/*responsive*/
+@media screen and (max-width: 500px){
+    nav div:last-child{
+        display: none;
+    }
+    
+    .box1{
+        flex-grow: 1;
+    }    
+}
+
+
+/*main*/
+.main{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.main1{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/*responsive*/
+@media screen and (max-width: 600px){
+    .main1{
+        flex-direction: row;
+    }
+    div[class^="box1"] img{
+        width: auto;
+    }
+}
+
+main div[class^="box1"]{
+    max-width: 250px;
+    max-height: 250px;
+    justify-content: center;
+    margin: 20px;
+    flex: 0 0 20%;
+    border: #fff solid 7px;
+    transform: rotate(-3deg);
+    padding: 0px;
+    box-shadow: #000 3px 3px 5px;
+}
+
+main div[class^="box1"]:nth-child(even) {
+    transform: rotate(5deg);
+}
+
+.hover{
+    box-shadow: black 1px 1px 5px;
+}
+
+/*Footer*/
+.footer{
+    background-color: rgba(0,0,0,.5);
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer a{
+    color: #fff;
+}
+
+footer div[class^="box"]{
+    justify-content: center;
+}
+
+img[alt^="group"]{
+    min-height: 60px;
+    max-height: 200px;
+    width: auto;
+}
+
+img[alt="1"] {
+    height: 100px;
+    width: auto;
+}
+
+#alert{
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+    top: 20%;
+    left: 0;
+    right: 0;
+    width: 25%;
+    background-color: rgba(0,0,0,.75);
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+    display: none;
+}
+
+#alert-button{
+    border: 0;
+    box-shadow: black 1px 2px 5px;
+    margin-top: 10px;
+}
+
+
+
+/*****Delivery css***/
+
+#map{ /* la carte doit avoir une hauteur sinon elle n'apparaît pas */
+    max-width: 600px;
+    min-width : 400px;
+    height: 500px;
+    z-index:0;
+}
+
+
+main div[class^="box12"]{
+    background-color: #000;
+}

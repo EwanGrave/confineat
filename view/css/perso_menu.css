@@ -1,0 +1,18 @@
+.main1
+{
+    display:none;
+}
+
+#Plat
+{
+    display:inline-flex;
+}
+
+.img_over{
+    position: absolute;
+    z-index : 10;
+}
+
+.valider{
+    display:none;
+}
